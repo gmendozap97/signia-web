@@ -6,8 +6,6 @@ if (menuBtn && mobileMenu) {
         mobileMenu.classList.toggle('hidden');
     });
 }
-
-// Simulated Shipment Tracking Function
 function trackShipment() {
     const input = document.getElementById('tracking-input');
     const resultDiv = document.getElementById('tracking-result');
