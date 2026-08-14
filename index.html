@@ -1,271 +1,183 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Signia | Soluciones logísticas especializadas para empresas que necesitan seguridad, trazabilidad y cumplimiento.">
-  <meta name="theme-color" content="#0756A6">
-  <title>Signia | Logística especializada que mueve tu negocio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signia Logistics | Global Supply Chain & Supply Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Signia inicio">
-        <span class="brand-word">signia</span>
-        <span class="brand-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-      </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#soluciones">Soluciones</a>
-        <a href="#sectores">Sectores</a>
-        <a href="#capacidades">Capacidades</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#tecnologia">Tecnología</a>
-        <a href="#contacto">Contacto</a>
-        <a class="btn btn-small btn-primary" href="#cotizar">Cotizar</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-slate-950 text-slate-100 font-['Inter'] antialiased selection:bg-blue-600 selection:text-white">
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-grid"></div>
-      <div class="container hero-content">
-        <div class="eyebrow"><span class="pulse"></span> Operador logístico especializado</div>
-        <h1>Tu operación no puede detenerse.<br><span>Nosotros tampoco.</span></h1>
-        <p class="hero-copy">Integramos almacenamiento, acondicionado, distribución y soluciones a medida para que tus productos lleguen donde deben, cuando deben y bajo los estándares que exige tu negocio.</p>
-        <div class="hero-actions">
-          <a href="#cotizar" class="btn btn-primary btn-large">Quiero una solución logística <span>→</span></a>
-          <a href="#soluciones" class="btn btn-ghost btn-large">Ver soluciones</a>
-        </div>
-        <div class="hero-proof">
-          <div><strong>30+</strong><span>años de experiencia</span></div>
-          <div><strong>240K+</strong><span>pedidos / año</span></div>
-          <div><strong>50K+</strong><span>posiciones de almacenamiento</span></div>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="route route-1"></div>
-        <div class="route route-2"></div>
-        <div class="route route-3"></div>
-        <div class="node node-a"></div>
-        <div class="node node-b"></div>
-        <div class="node node-c"></div>
-        <div class="node node-d"></div>
-        <div class="warehouse">
-          <div class="warehouse-roof"></div>
-          <div class="warehouse-body">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
-          <div class="warehouse-label">SIGNIA<br><small>LOGISTICS</small></div>
-        </div>
-        <div class="truck">
-          <div class="truck-box"></div><div class="truck-cab"></div><div class="wheel w1"></div><div class="wheel w2"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <div class="container trust-inner">
-        <span>Especialistas en:</span>
-        <b>Salud & Pharma</b><i></i><b>Consumo Masivo</b><i></i><b>Tecnología</b><i></i><b>Cosmética</b><i></i><b>Químicos</b>
-      </div>
-    </section>
-
-    <section class="section solutions" id="soluciones">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="kicker">SOLUCIONES</span>
-            <h2>Una sola operación.<br><span>Todo lo que necesitas.</span></h2>
-          </div>
-          <p>Diseñamos soluciones integrales y personalizadas para que tu cadena de suministro sea más simple, visible y controlable.</p>
-        </div>
-        <div class="solution-grid">
-          <article class="solution-card featured">
-            <div class="card-top"><span class="number">01</span><span class="icon">↗</span></div>
-            <h3>Almacenamiento</h3>
-            <p>Almacenamiento simple y depósito aduanero con infraestructura adaptada a productos y condiciones específicas.</p>
-            <ul><li>+50,000 posiciones</li><li>Temperatura controlada</li><li>Gestión de inventarios</li></ul>
-            <a href="#cotizar">Conocer solución <span>→</span></a>
-          </article>
-          <article class="solution-card">
-            <div class="card-top"><span class="number">02</span><span class="icon">⌁</span></div>
-            <h3>Distribución & entrega</h3>
-            <p>Flota propia y mixta para llevar tu producto a nivel nacional con trazabilidad y control.</p>
-            <ul><li>Flota 2, 5 y 10 TN</li><li>Cadena de frío</li><li>Tracking online</li></ul>
-            <a href="#cotizar">Conocer solución <span>→</span></a>
-          </article>
-          <article class="solution-card">
-            <div class="card-top"><span class="number">03</span><span class="icon">✦</span></div>
-            <h3>Acondicionado</h3>
-            <p>Procesos de acondicionamiento y reacondicionamiento alineados a los requerimientos de cada operación.</p>
-            <ul><li>Etiquetado y packing</li><li>Procesos a medida</li><li>Control de calidad</li></ul>
-            <a href="#cotizar">Conocer solución <span>→</span></a>
-          </article>
-          <article class="solution-card">
-            <div class="card-top"><span class="number">04</span><span class="icon">◎</span></div>
-            <h3>Nacionalización</h3>
-            <p>Integramos la gestión de ingreso de mercancía con almacenamiento y distribución para reducir fricciones.</p>
-            <ul><li>Depósito aduanero</li><li>Control documental</li><li>Operación integrada</li></ul>
-            <a href="#cotizar">Conocer solución <span>→</span></a>
-          </article>
-          <article class="solution-card">
-            <div class="card-top"><span class="number">05</span><span class="icon">□</span></div>
-            <h3>Arrendamiento</h3>
-            <p>Espacios y capacidades que se adaptan a tus necesidades operativas y al crecimiento de tu negocio.</p>
-            <ul><li>Infraestructura flexible</li><li>Ubicaciones estratégicas</li><li>Escalabilidad</li></ul>
-            <a href="#cotizar">Conocer solución <span>→</span></a>
-          </article>
-          <article class="solution-card custom">
-            <span class="kicker">TAILOR MADE</span>
-            <h3>¿Tu operación es distinta?</h3>
-            <p>Cuéntanos el desafío. Diseñamos una solución logística alrededor de tu negocio, no al revés.</p>
-            <a class="btn btn-light" href="#cotizar">Hablar con un experto →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section industries" id="sectores">
-      <div class="container">
-        <div class="section-heading centered">
-          <span class="kicker">SECTORES</span>
-          <h2>Conocemos lo que<br><span>tu industria necesita.</span></h2>
-          <p>No todas las mercancías se manejan igual. Nuestra especialización nos permite operar bajo exigencias específicas de cada sector.</p>
-        </div>
-        <div class="industry-tabs" role="tablist">
-          <button class="industry-tab active" data-industry="pharma">Farmacéutico</button>
-          <button class="industry-tab" data-industry="consumer">Consumo masivo</button>
-          <button class="industry-tab" data-industry="cosmetic">Cosmético</button>
-          <button class="industry-tab" data-industry="tech">Tecnología</button>
-          <button class="industry-tab" data-industry="chemical">Químicos</button>
-          <button class="industry-tab" data-industry="animal">Salud animal</button>
-        </div>
-        <div class="industry-panel">
-          <div class="industry-copy">
-            <span class="panel-label" id="industry-label">FARMACÉUTICO</span>
-            <h3 id="industry-title">Trazabilidad y calidad en cada movimiento.</h3>
-            <p id="industry-text">Para productos de salud, la logística es parte del producto. Integramos procesos, infraestructura y control para responder a estándares de calidad y trazabilidad exigentes.</p>
-            <div class="industry-points" id="industry-points">
-              <span>✓ BPA / BPM / BPDyT</span><span>✓ Temperatura controlada</span><span>✓ Trazabilidad</span><span>✓ Procesos documentados</span>
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl font-black text-xl tracking-wider shadow-lg shadow-blue-600/30">
+                    SL
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight block">SIGNIA</span>
+                    <span class="text-xs text-blue-400 tracking-widest uppercase font-semibold">Global Logistics</span>
+                </div>
             </div>
-            <a href="#cotizar" class="text-link">Diseñar mi solución <span>→</span></a>
-          </div>
-          <div class="industry-visual">
-            <div class="visual-grid"></div>
-            <div class="medical-box"><span>01</span><b>CONTROL</b><small>QUALITY</small></div>
-            <div class="temperature"><span>2–8°C</span><small>CONTROL TEMP.</small></div>
-          </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-400 transition-colors">Servicios</a>
+                <a href="#rastreo" class="hover:text-blue-400 transition-colors">Rastreo</a>
+                <a href="#tecnologia" class="hover:text-blue-400 transition-colors">Tecnología</a>
+                <a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contacto" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-lg shadow-blue-600/20">
+                    Portal de Clientes
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-      </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#inicio" class="block text-slate-300 hover:text-blue-400">Inicio</a>
+            <a href="#servicios" class="block text-slate-300 hover:text-blue-400">Servicios</a>
+            <a href="#rastreo" class="block text-slate-300 hover:text-blue-400">Rastreo</a>
+            <a href="#tecnologia" class="block text-slate-300 hover:text-blue-400">Tecnología</a>
+            <a href="#contacto" class="block text-slate-300 hover:text-blue-400">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-globe"></i> <span>Líder en Cadena de Suministro Global</span>
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Conectamos tu negocio con el <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">mundo entero</span>.
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl">
+                    Soluciones logísticas integrales con tecnología de punta, trazabilidad en tiempo real y optimización de flujos B2B para mercados globales y locales.
+                </p>
+                <!-- Quick Tracking Widget -->
+                <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-2xl shadow-2xl max-w-xl">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <div class="relative flex-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-slate-500">
+                                <i class="fa-solid fa-box-archive"></i>
+                            </span>
+                            <input type="text" id="tracking-input" placeholder="Ingresa tu número de guía o contenedor..." class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-11 pr-4 py-3.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors">
+                        </div>
+                        <button onclick="trackShipment()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2">
+                            <span>Rastrear</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div id="tracking-result" class="mt-3 text-xs text-slate-400 hidden"></div>
+                </div>
+            </div>
+            <!-- Hero Stats / Card -->
+            <div class="lg:col-span-5">
+                <div class="relative bg-gradient-to-br from-blue-900/20 to-slate-900 border border-blue-500/20 rounded-3xl p-8 backdrop-blur-xl shadow-2xl">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-lg">
+                        99.8% Eficiencia
+                    </div>
+                    <h3 class="text-xl font-bold mb-6 text-slate-200">Infraestructura Global</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600/10 border border-blue-500/20 p-3.5 rounded-2xl text-blue-400 text-xl">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200">Carga Aérea Expresa</h4>
+                                <p class="text-sm text-slate-400">Conexiones directas en los principales hubs mundiales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600/10 border border-blue-500/20 p-3.5 rounded-2xl text-blue-400 text-xl">
+                                <i class="fa-solid fa-ship"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200">Carga Marítima FCL / LCL</h4>
+                                <p class="text-sm text-slate-400">Optimización de costos para grandes volúmenes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600/10 border border-blue-500/20 p-3.5 rounded-2xl text-blue-400 text-xl">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200">Almacenamiento Inteligente</h4>
+                                <p class="text-sm text-slate-400">Gestión de inventarios optimizada mediante sistemas WMS y SAP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section capabilities" id="capacidades">
-      <div class="container">
-        <div class="cap-header">
-          <div><span class="kicker">CAPACIDADES</span><h2>Infraestructura que<br><span>responde a la operación.</span></h2></div>
-          <p>La combinación de infraestructura, flota, tecnología y equipos especializados nos permite adaptar la operación al producto y al nivel de servicio requerido.</p>
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase font-bold text-blue-400 tracking-widest">Nuestras Soluciones</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold tracking-tight">Servicios Logísticos de Clase Mundial</h3>
+                <p class="text-slate-400">Diseñamos arquitecturas logísticas a la medida para garantizar el éxito operativo de tu empresa.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Transporte Terrestre y Distribución</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Flota moderna dotada de geolocalización satelital para asegurar entregas seguras en tiempo récord a nivel nacional y regional.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Gestión de Inventarios y WMS</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Control absoluto de stock, preparación de pedidos (*picking & packing*) y visibilidad en tiempo real para optimizar tu capital de trabajo.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Trade Marketing y Logística Promocional</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Soluciones especializadas para retail y consumo masivo, asegurando el despliegue oportuno de material POP y productos en punto de venta.</p>
+                </div>
+            </div>
         </div>
-        <div class="cap-grid">
-          <div class="cap-main">
-            <div class="cap-number">+50,000</div><h3>posiciones de almacenamiento</h3>
-            <p>Capacidad para almacenamiento simple y aduanero, con espacios y condiciones diferenciadas.</p>
-            <div class="capacity-bars"><span style="--w:90%"><b>Almacenamiento</b><i></i></span><span style="--w:72%"><b>Depósito aduanero</b><i></i></span><span style="--w:55%"><b>Temperatura controlada</b><i></i></span></div>
-          </div>
-          <div class="cap-item"><div class="cap-icon">°C</div><strong>Temperatura</strong><span>2–8°C<br>15–30°C<br>Hasta 30°C</span></div>
-          <div class="cap-item"><div class="cap-icon">TN</div><strong>Flota</strong><span>2 TN · 5 TN<br>10 TN · motos</span></div>
-          <div class="cap-item"><div class="cap-icon">GPS</div><strong>Trazabilidad</strong><span>Tracking online<br>Control de rutas</span></div>
-          <div class="cap-item"><div class="cap-icon">365</div><strong>Seguridad</strong><span>Monitoreo y<br>controles de acceso</span></div>
-        </div>
-      </div>
     </section>
 
-    <section class="section technology" id="tecnologia">
-      <div class="container tech-layout">
-        <div class="tech-screen">
-          <div class="screen-top"><span>signia<span>net</span></span><em>LIVE</em></div>
-          <div class="screen-map"><div class="map-line l1"></div><div class="map-line l2"></div><div class="map-dot d1"></div><div class="map-dot d2"></div><div class="map-dot d3"></div><div class="map-dot d4"></div><div class="map-route"></div></div>
-          <div class="screen-metrics"><div><small>PEDIDOS</small><b>12,480</b></div><div><small>EN RUTA</small><b>1,284</b></div><div><small>OTIF</small><b>98.4%</b></div></div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2 rounded-lg font-black text-sm">SL</div>
+                <span class="font-bold tracking-tight">SIGNIA Global Logistics</span>
+            </div>
+            <p class="text-slate-500 text-sm">© 2026 Signia Logistics S.A.C. Todos los derechos reservados.</p>
+            <div class="flex space-x-6 text-slate-400 text-lg">
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-globe"></i></a>
+            </div>
         </div>
-        <div class="tech-copy">
-          <span class="kicker">TECNOLOGÍA</span>
-          <h2>Visibilidad para<br><span>tomar decisiones.</span></h2>
-          <p>Tu operación no debería ser una caja negra. Signia cuenta con un sistema logístico online para consultar saldos, movimientos, tracking y reportes de la operación.</p>
-          <div class="tech-features"><div><b>01</b><span>Tracking de pedidos</span></div><div><b>02</b><span>Consulta de inventarios</span></div><div><b>03</b><span>Integración informática</span></div><div><b>04</b><span>Reportes operativos</span></div></div>
-          <a href="https://www.signianet.com" target="_blank" rel="noopener" class="btn btn-primary">Ir al portal de clientes ↗</a>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="section why" id="nosotros">
-      <div class="container">
-        <div class="section-heading">
-          <div><span class="kicker">¿POR QUÉ SIGNIA?</span><h2>Más que un operador.<br><span>Un socio de tu cadena.</span></h2></div>
-          <p>La propuesta no es mover cajas. Es asumir parte de la complejidad logística para que tu equipo pueda enfocarse en hacer crecer el negocio.</p>
-        </div>
-        <div class="why-grid">
-          <article><span>01</span><h3>Especialización</h3><p>Know-how para sectores con exigencias de calidad, trazabilidad y manejo especializado.</p></article>
-          <article><span>02</span><h3>Flexibilidad</h3><p>Soluciones tailor made que se adaptan a tu operación, volumen, producto y nivel de servicio.</p></article>
-          <article><span>03</span><h3>One Stop Shop</h3><p>Integramos nacionalización, almacenamiento, acondicionado y distribución en una sola operación.</p></article>
-          <article><span>04</span><h3>Compromiso</h3><p>Nos integramos a la cadena de cada cliente y trabajamos sobre el lead time acordado.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section network">
-      <div class="container network-layout">
-        <div>
-          <span class="kicker">RED & COBERTURA</span>
-          <h2>Una red diseñada para<br><span>acercarte al mercado.</span></h2>
-          <p>Contamos con centros de distribución en puntos estratégicos de Perú y operaciones en Ecuador, además de capacidad de distribución a nivel nacional.</p>
-          <div class="network-stats"><div><b>PERÚ</b><span>Lima · Arequipa</span></div><div><b>ECUADOR</b><span>Quito · Guayaquil</span></div></div>
-          <a href="#contacto" class="text-link">Conocer nuestras sedes <span>→</span></a>
-        </div>
-        <div class="map-card" aria-label="Mapa conceptual de cobertura">
-          <div class="map-lines"></div>
-          <span class="map-label lima">LIMA</span><span class="map-label areq">AREQUIPA</span><span class="map-label quito">QUITO</span><span class="map-label guaya">GUAYAQUIL</span>
-          <i class="map-pin p1"></i><i class="map-pin p2"></i><i class="map-pin p3"></i><i class="map-pin p4"></i>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="cotizar">
-      <div class="container cta-inner">
-        <div>
-          <span class="kicker">HABLEMOS DE TU OPERACIÓN</span>
-          <h2>Cuéntanos el desafío.<br><span>Nosotros movemos lo demás.</span></h2>
-          <p>Recibe una propuesta diseñada para las necesidades de tu cadena de suministro.</p>
-        </div>
-        <form class="quote-form" id="quoteForm">
-          <div class="form-row"><label>Nombre<input required name="name" placeholder="Tu nombre"></label><label>Empresa<input required name="company" placeholder="Empresa"></label></div>
-          <div class="form-row"><label>Correo<input required type="email" name="email" placeholder="nombre@empresa.com"></label><label>Teléfono<input required name="phone" placeholder="+51 999 999 999"></label></div>
-          <label>¿Qué necesitas?<select name="service"><option>Almacenamiento</option><option>Distribución y entrega</option><option>Acondicionado</option><option>Nacionalización</option><option>Arrendamiento</option><option>Solución integral</option></select></label>
-          <label>Cuéntanos brevemente<textarea name="message" rows="3" placeholder="Volumen, tipo de producto, ciudades, requerimiento..."></textarea></label>
-          <button class="btn btn-light btn-large" type="submit">Solicitar cotización <span>→</span></button>
-          <p class="form-note">Al enviar, se abrirá un correo preparado para el equipo comercial.</p>
-        </form>
-      </div>
-    </section>
-
-    <section class="contact" id="contacto">
-      <div class="container contact-grid">
-        <div><a class="brand footer-brand" href="#top"><span class="brand-word">signia</span><span class="brand-dots"><i></i><i></i><i></i></span></a><p>Soluciones logísticas especializadas para empresas que necesitan que las cosas pasen.</p></div>
-        <div><small>OFICINA CENTRAL</small><strong>Av. Los Frutales 220<br>Ate, Lima – Perú</strong></div>
-        <div><small>VENTAS & SERVICIO</small><strong>(511) 713-3310<br>947-900-027</strong></div>
-        <div><small>EMAIL</small><strong>info@signialogistics.com</strong></div>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="container footer-inner"><span>© 2026 Signia Logistics. Todos los derechos reservados.</span><div><a href="#">Privacidad</a><a href="#">Cookies</a></div></div></footer>
-  <a class="whatsapp" href="https://wa.me/51947900027?text=Hola%20Signia%2C%20quiero%20conocer%20una%20soluci%C3%B3n%20log%C3%ADstica." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">⌕</a>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
