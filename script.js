@@ -1,83 +1,41 @@
-const menu = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-if(menu){
-  menu.addEventListener('click',()=>{
-    const open = nav.classList.toggle('open');
-    menu.setAttribute('aria-expanded',open);
-  });
+// Mobile Menu Toggle
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 }
-document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
 
-const industries = {
-  pharma:{
-    label:'FARMACÉUTICO',
-    title:'Trazabilidad y calidad en cada movimiento.',
-    text:'Para productos de salud, la logística es parte del producto. Integramos procesos, infraestructura y control para responder a estándares de calidad y trazabilidad exigentes.',
-    points:['✓ BPA / BPM / BPDyT','✓ Temperatura controlada','✓ Trazabilidad','✓ Procesos documentados']
-  },
-  consumer:{
-    label:'CONSUMO MASIVO',
-    title:'Velocidad y precisión donde el consumidor decide.',
-    text:'Gestionamos operaciones que requieren flexibilidad, disponibilidad de inventario y respuesta rápida frente a campañas, promociones y cambios de demanda.',
-    points:['✓ Picking y despacho','✓ Acondicionado y packing','✓ Distribución nacional','✓ Gestión de campañas']
-  },
-  cosmetic:{
-    label:'COSMÉTICO',
-    title:'Cuidado del producto desde el almacén.',
-    text:'Soluciones para productos que necesitan una presentación impecable y procesos controlados desde la recepción hasta la entrega.',
-    points:['✓ Almacenamiento especializado','✓ Acondicionado','✓ Control de inventario','✓ Distribución']
-  },
-  tech:{
-    label:'TECNOLOGÍA',
-    title:'Control para productos de alto valor.',
-    text:'Diseñamos procesos con seguridad, trazabilidad y control de inventarios para operaciones tecnológicas que requieren visibilidad y precisión.',
-    points:['✓ Seguridad','✓ Tracking','✓ Inventario por SKU','✓ Distribución']
-  },
-  chemical:{
-    label:'QUÍMICOS',
-    title:'Procesos diseñados alrededor del riesgo.',
-    text:'Adaptamos infraestructura, seguridad y distribución a las características de la mercancía y a los requerimientos operativos de cada cliente.',
-    points:['✓ Seguridad operacional','✓ Segregación','✓ Control documental','✓ Distribución']
-  },
-  animal:{
-    label:'SALUD ANIMAL',
-    title:'Especialización para una cadena que no puede fallar.',
-    text:'Integramos almacenamiento, acondicionamiento y distribución para productos de salud animal, con procesos orientados a la trazabilidad.',
-    points:['✓ BPA / BPDyT','✓ Temperatura controlada','✓ Trazabilidad','✓ Cobertura nacional']
-  }
-};
-const tabs=document.querySelectorAll('.industry-tab');
-tabs.forEach(tab=>tab.addEventListener('click',()=>{
-  tabs.forEach(t=>t.classList.remove('active'));tab.classList.add('active');
-  const d=industries[tab.dataset.industry];
-  document.querySelector('#industry-label').textContent=d.label;
-  document.querySelector('#industry-title').textContent=d.title;
-  document.querySelector('#industry-text').textContent=d.text;
-  document.querySelector('#industry-points').innerHTML=d.points.map(x=>`<span>${x}</span>`).join('');
-}));
+// Simulated Shipment Tracking Function
+function trackShipment() {
+    const input = document.getElementById('tracking-input');
+    const resultDiv = document.getElementById('tracking-result');
+    
+    if (!input || !resultDiv) return;
 
-document.querySelector('#quoteForm')?.addEventListener('submit',(e)=>{
-  e.preventDefault();
-  const f=new FormData(e.currentTarget);
-  const subject=encodeURIComponent(`Solicitud de cotización | ${f.get('company')}`);
-  const body=encodeURIComponent(
-`Hola equipo Signia,
+    const trackingNumber = input.value.trim();
 
-Quiero solicitar una propuesta logística.
+    if (trackingNumber === '') {
+        resultDiv.classList.remove('hidden');
+        resultDiv.className = "mt-3 text-xs text-red-400 font-medium";
+        resultDiv.textContent = "Por favor, ingresa un número de guía válido.";
+        return;
+    }
 
-Nombre: ${f.get('name')}
-Empresa: ${f.get('company')}
-Correo: ${f.get('email')}
-Teléfono: ${f.get('phone')}
-Servicio: ${f.get('service')}
+    resultDiv.classList.remove('hidden');
+    resultDiv.className = "mt-3 text-xs text-blue-400 font-medium animate-pulse";
+    resultDiv.textContent = "Buscando información del envío en el servidor global...";
 
-Detalle:
-${f.get('message') || 'Sin detalle adicional.'}
-
-Enviado desde la nueva web de Signia.`
-  );
-  window.location.href=`mailto:info@signialogistics.com?subject=${subject}&body=${body}`;
-});
-
-const header=document.querySelector('.site-header');
-window.addEventListener('scroll',()=>header?.classList.toggle('scrolled',window.scrollY>10));
+    setTimeout(() => {
+        resultDiv.className = "mt-3 text-xs text-emerald-400 font-medium bg-emerald-950/40 border border-emerald-500/20 p-3 rounded-xl";
+        resultDiv.innerHTML = `
+            <div class="flex items-center justify-between mb-1">
+                <span class="font-bold">Guía: ${trackingNumber}</span>
+                <span class="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold">En Tránsito</span>
+            </div>
+            <p class="text-slate-300">Estado actual: Despachado desde Centro de Distribución Principal - Destino Final en Ruta.</p>
+        `;
+    }, 1200);
+}
